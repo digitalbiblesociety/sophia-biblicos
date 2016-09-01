@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="google" value="notranslate" />
+	<link href="build/images/favicon.png" rel="icon" />
+	<title>Biblicos</title>
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="https://inscript.bible.cloud/build/app.css?v=4.0.0" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://inscript.bible.cloud/build/app.js?v=4.0.0"></script>
+
+	<script>
+		sofia.config = $.extend(sofia.config, {
+			siteTitle: 'Biblicos',
+			windows: [
+				{type: 'bible', data: {textid: 'SPNBLA', fragmentid: 'JN1_1'}},
+				{type: 'search', data: {textid: 'SPNBLA', searchtext:'Verbo'}}
+			],
+			defaultLanguage: 'es',
+			pinnedLanguage: 'es',
+
+
+			settingsPrefix: '20160425',
+			enableBibleSelectorTabs: false,
+			textsIndexPath: 'dbs_texts.json',
+			baseContentUrl: 'http://inscript.bible.cloud/',
+			baseAPIUrl: 'http://bible.cloud/api/',
+			serverSearchPath: 'http://bible.cloud/api/bible/study/search/',
+			absUrl: 'http://bible.cloud/api/bible/partners/abs/',
+			enableOnlineSources: true,
+			enableFeedback: true,
+			feedbackUrl: 'http://bible.cloud/feedback/',
+			newCommentaryWindowTextId: "comm_eng_tske",
+			fcbhKey: '111a125057abd2f8931f6d6ad9f2921f',
+			jfmKey: '52b06248a3c6e8.12980089',
+			gaKey: 'UA-3734687-19',
+			enableAmericanBibleSociety: true,
+			eng2pEnableAll: false,
+			deafCentric: false,
+			enableDeafBibleWindow: false,
+			deafBibleWindowDefaultBibleVersion: 'ASESLV'
+
+		});
+	</script>
+	<style>
+	#app-logo a {
+    	line-height:60px;
+    	color:#FFF;
+    	text-decoration:none;
+    	font-size:x-large;
+	}
+	/* Three Column Fix for long menu titles */
+	.main-menu-item {
+		width:100px;
+	}
+	</style>
+</head>
+<body>
+
+</body>
+</html>
